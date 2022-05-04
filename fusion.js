@@ -29,4 +29,21 @@ function triage(tab_left, tab_right){
     return tab.concat(tab_left.slice(left)).concat(tab_right.slice(right));
 }
 
-/*mbola tsy vita hatramine'ny farany 
+
+
+function tri(tab){
+
+    if (tab.length < 2) {
+        return tab;
+    }
+
+    /**La fonction Math.floor(x) renvoie le plus grand entier qui est inférieur ou égal à un nombre x.
+
+ */
+     let mid = Math.floor(tab.length / 2),
+     tab_right = tab.slice(mid),
+     tab_left = tab.slice(0, mid),
+     array = triage(tri(tab_left), tri(tab_right));
+
+     
+    }
