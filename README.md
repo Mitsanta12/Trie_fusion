@@ -9,4 +9,10 @@ Le tri fusion se décrit naturellement sur des listes et c'est sur de telles str
 Cependant, il fonctionne aussi sur des tableaux. La version la plus simple du tri fusion sur les tableaux a une efficacité comparable au tri rapide,
 mais elle n'opère pas en place : une zone temporaire de données supplémentaire de taille égale à celle de l'entrée est nécessaire
 (des versions plus complexes peuvent être effectuées sur place mais sont moins rapides). Sur les listes, sa complexité est optimale,
-il s'implémente très simplement et ne requiert pas de copie en mémoire temporaire (selon wikipedia).
+il s'implémente très simplement et ne requiert pas de copie en mémoire temporaire .
+
+  Comment marche le tri fusion ?
+Le principe du tri fusion en est le suivant :
+    - On divise en deux moitiés la liste à trier (en prenant par exemple, un élément sur deux pour chacune des listes). 
+    - On trie chacune d'entre elles.
+    - On fusionne les deux moitiés obtenues pour reconstituer la liste triée.
