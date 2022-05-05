@@ -1,5 +1,5 @@
 # Trie_fusion
-En informatique, le tri fusion,ou tri dichotomique, est un algorithme de tri par comparaison stable.
+En informatique, le tri fusion est un algorithme de tri par comparaison stable(un tri est dit stable s'il préserve l'ordonnancement initial des éléments que l'ordre considère comme égaux).
 Sa complexité temporelle pour une entrée de taille n est de l'ordre de n log n, ce qui est asymptotiquement optimal.
 Ce tri est basé sur la technique algorithmique diviser pour régner. 
 L'opération principale de l'algorithme est la fusion, qui consiste à réunir deux listes triées en une seule. 
