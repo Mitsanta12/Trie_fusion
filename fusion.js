@@ -45,5 +45,17 @@ function tri(tab){
      tab_left = tab.slice(0, mid),
      array = triage(tri(tab_left), tri(tab_right));
 
+     /**La méthode unshift() ajoute un ou plusieurs éléments au début d'un
+      tableau et renvoie la nouvelle longueur du tableau. */
+      array.unshift(0, tab.length);
+      /*La méthode apply() appelle une fonction en lui passant une valeur this et des arguments sous forme d'un tableau*/
+      tab.splice.apply(tab, array);
+      return tab;
+  }
+  
+  var tab = [11,16,20,4,35,1,8,5,3,66,2];
+  tri(tab);
+  console.log(tab);
+
      
-    }
+    
